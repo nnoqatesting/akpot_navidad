@@ -1,10 +1,10 @@
 /* AK-POT · Nieve cinematográfica SOLO en el Hero (Canvas, sin librerías).
    3 capas de profundidad (lejos/medio/cerca), copos suaves desenfocados, viento lento,
    animación por tiempo (dt) sin saltos, pausa fuera de pantalla / pestaña oculta,
-   respeta prefers-reduced-motion. Se activa con <html class="xmasc">. */
+   anima siempre (ignora prefers-reduced-motion, ver RESPETAR_MOVIMIENTO_REDUCIDO). Se activa con <html class="xmasc">. */
 (function(){
   /* true  = respeta 'reducir movimiento' del sistema (nieve quieta). false = siempre animada. */
-  var RESPETAR_MOVIMIENTO_REDUCIDO=true;
+  var RESPETAR_MOVIMIENTO_REDUCIDO=false;
   /* Para probar: agregar nieve=on a la dirección (ej. index.html?nieve=on) fuerza la animación aunque el sistema reduzca el movimiento. */
   var forzar=/nieve=on\b/.test(location.href);
   var d=document,root=d.documentElement,hero=d.querySelector('.hero');

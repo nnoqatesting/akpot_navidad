@@ -19,6 +19,6 @@ OTRAS OPCIONES INCLUIDAS (no activas)
 NOTAS
 - Al abrir index.html, la consola (F12) muestra '[AK-POT nieve]': 'Animando N copos' o 'En pausa' (si el sistema reduce el movimiento).
 - Si la nieve no se mueve: tu sistema tiene activado "reducir movimiento" (Windows: Accesibilidad > Efectos visuales > Efectos de animación; Mac/iPhone: Reducir movimiento).
-  Para probarla igual, abrí index.html?nieve=on . Para que SIEMPRE se anime, poné RESPETAR_MOVIMIENTO_REDUCIDO=false al inicio de navidad/nieve-hero.js (no recomendado por accesibilidad).
-- La nieve queda quieta si el sistema del visitante tiene activado "reducir movimiento".
+  Para probarla igual, abrí index.html?nieve=on . La nieve ya está configurada para animarse siempre (RESPETAR_MOVIMIENTO_REDUCIDO=false en navidad/nieve-hero.js). Poné true para respetar la preferencia del visitante.
+- Con RESPETAR_MOVIMIENTO_REDUCIDO=true la nieve queda quieta si el visitante tiene activado "reducir movimiento".
 - img/amortiguador-diagrama-anterior.* es el diagrama anterior, por si querés volver a él.
