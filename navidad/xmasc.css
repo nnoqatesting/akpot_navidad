@@ -44,7 +44,8 @@ html.xmasc .ticket:hover::after{animation:xc-swing 1.2s ease-out}
 /* 6 · Nieve cinematográfica, solo en el Hero (ver nieve-hero.js) */
 .xc-snow{display:none}
 html.xmasc .xc-snow{display:block;position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
-html.xmasc .hero>.wrap{position:relative;z-index:1}
+html.xmasc .hero,html.xmasc .page-hero{position:relative}
+html.xmasc .hero>*:not(.xc-snow),html.xmasc .page-hero>*:not(.xc-snow){position:relative;z-index:1}
 /* 5 · Gorro de Papá Noel sobre el logo */
 html.xmasc .header__logo{position:relative}
 .xc-hat{display:none}

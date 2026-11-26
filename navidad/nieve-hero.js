@@ -7,7 +7,7 @@
   var RESPETAR_MOVIMIENTO_REDUCIDO=false;
   /* Para probar: agregar nieve=on a la dirección (ej. index.html?nieve=on) fuerza la animación aunque el sistema reduzca el movimiento. */
   var forzar=/nieve=on\b/.test(location.href);
-  var d=document,root=d.documentElement,hero=d.querySelector('.hero');
+  var d=document,root=d.documentElement,hero=d.querySelector('.hero,.page-hero');
   if(!hero)return;
   var cv=d.createElement('canvas');cv.className='xc-snow';cv.setAttribute('aria-hidden','true');
   hero.insertBefore(cv,hero.firstChild);
@@ -29,6 +29,7 @@
   function layerOf(){var q=Math.random();return q<L[0].sh?0:q<L[0].sh+L[1].sh?1:2;}
   function size(){
     var nw=hero.clientWidth,nh=hero.clientHeight;if(!nw||!nh)return;
+    var vw=root.clientWidth;if(nw<vw-4){nw=vw;cv.style.cssText='left:50%;right:auto;width:'+vw+'px;transform:translateX(-50%)';}else cv.style.cssText='';
     var sx=W?nw/W:1,sy=H?nh/H:1;W=nw;H=nh;dpr=Math.min(devicePixelRatio||1,2);
     cv.width=Math.round(W*dpr);cv.height=Math.round(H*dpr);
     var n=Math.round(Math.max(34,Math.min(W<700?52:120,W*H/9000)));

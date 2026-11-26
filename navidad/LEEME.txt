@@ -3,7 +3,7 @@ DISEÑO NAVIDEÑO AK-POT · Opción C "Noche de taller" (activa)
 ARCHIVOS
 - navidad/xmasc.css ........ estilos (fondo navideño, tira de testigos, luces desenfocadas, gorro, etiquetas "Para regalar", mensajes)
 - navidad/xmasc.js ......... crea los elementos decorativos
-- navidad/nieve-hero.js .... nieve cinematográfica SOLO en el Hero (solo index.html)
+- navidad/nieve-hero.js .... nieve cinematográfica en el encabezado de index, contacto y compatibilidad
 - img/hero-navidad.jpg/.webp  foto de fondo navideña (el hero.jpg original no se toca)
 - Fuente "Fraunces" (cursiva) se carga desde Google Fonts, solo para los mensajes de fiestas.
 
